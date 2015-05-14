@@ -9,7 +9,7 @@ import java.util.*;
 public class Queue
 {
     // instance variables - replace the example below with your own
-    private int x;
+    private ArrayList<QueueItem> showQueue;
 
     /**
      * Constructor for objects of class Queue
@@ -17,7 +17,7 @@ public class Queue
     public Queue()
     {
         // initialise instance variables
-        x = 0;
+        
     }
 
     /**
@@ -29,7 +29,7 @@ public class Queue
     public int sampleMethod(int y)
     {
         // put your code here
-        return x + y;
+        return 0;
     }
     
 }

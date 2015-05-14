@@ -9,7 +9,7 @@ import java.util.*
 public class Watched
 {
     // instance variables - replace the example below with your own
-    private int x;
+    private ArrayList<WatchedItem> watchedList;
 
     /**
      * Constructor for objects of class Watched
@@ -17,7 +17,7 @@ public class Watched
     public Watched()
     {
         // initialise instance variables
-        x = 0;
+        
     }
 
     /**
@@ -26,9 +26,28 @@ public class Watched
      * @param  y   a sample parameter for a method
      * @return     the sum of x and y 
      */
-    public int sampleMethod(int y)
+    public void sortAlphabtically()
     {
-        // put your code here
-        return x + y;
+        
+    }
+    
+    public void sortByRating()
+    {
+        
+    }
+    
+    public void sortByDate()
+    {
+        
+    }
+    
+    public void sortByEpisodesLS()
+    {
+        
+    }
+    
+    public void sortByEpisodesSL()
+    {
+
     }
 }
