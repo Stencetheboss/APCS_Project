@@ -2,4 +2,12 @@
 comment0.params=name\ stillAir\ eps\ startDate\ genre\ watchSpot\ importance
 comment0.target=QueueItem(java.lang.String,\ boolean,\ int,\ java.lang.String,\ Genre,\ java.lang.String,\ double)
 comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ QueueItem\r\n
-numComments=1
+comment1.params=
+comment1.target=java.lang.String\ getTitle()
+comment2.params=
+comment2.target=double\ getPriority()
+comment3.params=
+comment3.target=java.lang.String\ getDate()
+comment4.params=
+comment4.target=int\ getEpisodes()
+numComments=5

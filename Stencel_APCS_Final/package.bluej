@@ -26,12 +26,21 @@ dependency8.type=UsesDependency
 dependency9.from=ShowList
 dependency9.to=WatchedGUI
 dependency9.type=UsesDependency
+<<<<<<< HEAD
 objectbench.height=76
 objectbench.width=1322
 package.editor.height=616
 package.editor.width=1252
 package.editor.x=-4
 package.editor.y=-14
+=======
+objectbench.height=100
+objectbench.width=437
+package.editor.height=597
+package.editor.width=640
+package.editor.x=937
+package.editor.y=22
+>>>>>>> 9c2f30d25769bb58754dbc83e915515ed20e43d2
 package.numDependencies=9
 package.numTargets=9
 package.showExtends=true
@@ -39,14 +48,23 @@ package.showUses=true
 project.charset=UTF-8
 target1.editor.height=700
 target1.editor.width=900
+<<<<<<< HEAD
 target1.editor.x=0
 target1.editor.y=0
 target1.height=50
 target1.name=WatchedGUI
+=======
+target1.editor.x=1001
+target1.editor.y=89
+target1.height=50
+target1.name=QueueGUI
+target1.naviview.expanded=false
+>>>>>>> 9c2f30d25769bb58754dbc83e915515ed20e43d2
 target1.showInterface=false
 target1.type=ClassTarget
 target1.typeParameters=
 target1.width=90
+<<<<<<< HEAD
 target1.x=90
 target1.y=10
 target2.editor.height=788
@@ -55,13 +73,29 @@ target2.editor.x=701
 target2.editor.y=147
 target2.height=50
 target2.name=WatchedItem
+=======
+target1.x=200
+target1.y=370
+target2.editor.height=700
+target2.editor.width=900
+target2.editor.x=123
+target2.editor.y=22
+target2.height=50
+target2.name=ShowList
+>>>>>>> 9c2f30d25769bb58754dbc83e915515ed20e43d2
 target2.naviview.expanded=false
 target2.showInterface=false
 target2.type=ClassTarget
 target2.typeParameters=
+<<<<<<< HEAD
 target2.width=100
 target2.x=440
 target2.y=390
+=======
+target2.width=80
+target2.x=120
+target2.y=470
+>>>>>>> 9c2f30d25769bb58754dbc83e915515ed20e43d2
 target3.editor.height=700
 target3.editor.width=900
 target3.editor.x=132
@@ -73,7 +107,11 @@ target3.showInterface=false
 target3.type=AbstractTarget
 target3.typeParameters=
 target3.width=80
+<<<<<<< HEAD
 target3.x=260
+=======
+target3.x=230
+>>>>>>> 9c2f30d25769bb58754dbc83e915515ed20e43d2
 target3.y=100
 target4.editor.height=700
 target4.editor.width=900
@@ -86,6 +124,7 @@ target4.showInterface=false
 target4.type=ClassTarget
 target4.typeParameters=
 target4.width=80
+<<<<<<< HEAD
 target4.x=380
 target4.y=10
 target5.editor.height=700
@@ -94,22 +133,43 @@ target5.editor.x=0
 target5.editor.y=0
 target5.height=50
 target5.name=QueueGUI
+=======
+target4.x=300
+target4.y=40
+target5.editor.height=700
+target5.editor.width=900
+target5.editor.x=773
+target5.editor.y=292
+target5.height=50
+target5.name=Queue
+target5.naviview.expanded=false
+>>>>>>> 9c2f30d25769bb58754dbc83e915515ed20e43d2
 target5.showInterface=false
 target5.type=ClassTarget
 target5.typeParameters=
 target5.width=80
+<<<<<<< HEAD
 target5.x=190
 target5.y=10
 target6.editor.height=479
 target6.editor.width=1010
 target6.editor.x=261
 target6.editor.y=17
+=======
+target5.x=100
+target5.y=270
+target6.editor.height=700
+target6.editor.width=900
+target6.editor.x=262
+target6.editor.y=23
+>>>>>>> 9c2f30d25769bb58754dbc83e915515ed20e43d2
 target6.height=50
-target6.name=QueueItem
-target6.naviview.expanded=false
+target6.name=Watched
+target6.naviview.expanded=true
 target6.showInterface=false
 target6.type=ClassTarget
 target6.typeParameters=
+<<<<<<< HEAD
 target6.width=90
 target6.x=170
 target6.y=260
@@ -132,10 +192,34 @@ target8.editor.x=773
 target8.editor.y=325
 target8.height=50
 target8.name=Queue
+=======
+target6.width=80
+target6.x=30
+target6.y=170
+target7.editor.height=700
+target7.editor.width=900
+target7.editor.x=377
+target7.editor.y=116
+target7.height=50
+target7.name=WatchedGUI
+target7.showInterface=false
+target7.type=ClassTarget
+target7.typeParameters=
+target7.width=100
+target7.x=20
+target7.y=370
+target8.editor.height=793
+target8.editor.width=1091
+target8.editor.x=701
+target8.editor.y=147
+target8.height=50
+target8.name=WatchedItem
+>>>>>>> 9c2f30d25769bb58754dbc83e915515ed20e43d2
 target8.naviview.expanded=false
 target8.showInterface=false
 target8.type=ClassTarget
 target8.typeParameters=
+<<<<<<< HEAD
 target8.width=80
 target8.x=100
 target8.y=320
@@ -147,3 +231,21 @@ target9.typeParameters=
 target9.width=80
 target9.x=280
 target9.y=10
+=======
+target8.width=100
+target8.x=350
+target8.y=220
+target9.editor.height=479
+target9.editor.width=1010
+target9.editor.x=797
+target9.editor.y=408
+target9.height=50
+target9.name=QueueItem
+target9.naviview.expanded=false
+target9.showInterface=false
+target9.type=ClassTarget
+target9.typeParameters=
+target9.width=90
+target9.x=170
+target9.y=170
+>>>>>>> 9c2f30d25769bb58754dbc83e915515ed20e43d2
