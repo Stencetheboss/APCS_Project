@@ -25,5 +25,23 @@ public class QueueItem extends Show
         priority = importance;
     }
 
+    public String getTitle()
+    {
+        return showName;
+    }
 
+    public double getPriority()
+    {
+        return priority;        
+    }
+
+    public String getDate()
+    {
+        return showStartDate;
+    }
+
+    public int getEpisodes()
+    {
+        return episodes;
+    }
 }
