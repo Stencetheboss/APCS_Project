@@ -17,7 +17,6 @@ public class WatchedGUI
      */
     public WatchedGUI()
     {
-
         frame = new JFrame ("Queue");
         frame.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
     }

@@ -8,7 +8,6 @@ import java.util.*;
  */
 public class Queue
 {
-    // instance variables - replace the example below with your own
     private ArrayList<QueueItem> showQueue;
 
     /**
@@ -16,8 +15,9 @@ public class Queue
      */
     public Queue()
     {
-
+        
     }
+    
     public void sortByEpisodesSL()
     {
         for (int i =1; i< showQueue.size(); i++){

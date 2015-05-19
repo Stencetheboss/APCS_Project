@@ -8,7 +8,6 @@ import java.util.*
  */
 public class Watched
 {
-    // instance variables - replace the example below with your own
     private ArrayList<WatchedItem> watchedList;
 
     /**
@@ -16,8 +15,7 @@ public class Watched
      */
     public Watched()
     {
-        // initialise instance variables
-
+        
     }
 
     /**

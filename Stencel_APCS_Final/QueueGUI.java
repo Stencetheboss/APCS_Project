@@ -16,14 +16,13 @@ public class QueueGUI
      * Constructor for objects of class QueueGUI
      */
     public QueueGUI()
-    {
-        // initialise instance variables
+    {       
         frame = new JFrame ("Queue");
         frame.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
     }
 
     public void display(){
-            frame.pack();
-            frame.setVisible(true);                  
-        }
+        frame.pack();
+        frame.setVisible(true);                  
+    }
 }
