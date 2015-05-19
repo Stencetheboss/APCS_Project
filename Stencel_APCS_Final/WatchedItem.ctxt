@@ -1,6 +1,6 @@
 #BlueJ class context
-comment0.params=name\ stillAir\ eps\ startDate\ genre\ watchSpot\ score
-comment0.target=WatchedItem(java.lang.String,\ boolean,\ int,\ java.lang.String,\ Genre,\ java.lang.String,\ double)
+comment0.params=name\ stillAir\ eps\ startDay\ startMonth\ startYear\ genre\ watchSpot\ score
+comment0.target=WatchedItem(java.lang.String,\ boolean,\ int,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ Genre,\ java.lang.String,\ double)
 comment1.params=
 comment1.target=java.lang.String\ getTitle()
 comment2.params=

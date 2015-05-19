@@ -19,9 +19,9 @@ public class QueueItem extends Show
     /**
      * Constructor for objects of class QueueItem
      */
-    public QueueItem(String name, boolean stillAir, int eps, String startDate, Genre genre, String watchSpot, double importance)
+    public QueueItem(String name, boolean stillAir, int eps, String startDay, String startMonth, String startYear, Genre genre, String watchSpot, double importance)
     {
-        super(name, stillAir, eps, startDate, genre, watchSpot);
+        super(name, stillAir, eps, startDay, startMonth, startYear, genre, watchSpot);
         priority = importance;
     }
 

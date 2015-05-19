@@ -16,9 +16,9 @@ public class WatchedItem extends Show
     private String showStartDate;  
     private double rating;
 
-    public WatchedItem(String name, boolean stillAir, int eps, String startDate, Genre genre, String watchSpot, double score)
+    public WatchedItem(String name, boolean stillAir, int eps, String startDay, String startMonth, String startYear, Genre genre, String watchSpot, double score)
     {
-        super(name, stillAir, eps, startDate, genre, watchSpot);
+        super(name, stillAir, eps, startDay, startMonth, startYear, genre, watchSpot);
         rating = score;
     }
 
