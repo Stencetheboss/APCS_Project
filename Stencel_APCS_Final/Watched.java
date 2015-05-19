@@ -118,11 +118,33 @@ public class Watched
 
     public void sortByEpisodesLS()
     {
-
+        for (int i =1; i< watchedList.size(); i++){
+            int a = watchedList.get(i-1).getEpisodes();
+            int b = watchedList.get(i).getEpisodes();
+            //if a has less episodes than b switch them
+            if(a < b){
+                WatchedItem temp1 = watchedList.get(i-1);
+                WatchedItem temp2 = watchedList.get(i);                
+                watchedList.set(i, temp1);
+                watchedList.set(i-1, temp2);
+                i--;
+            }
+        }
     }
 
     public void sortByEpisodesSL()
     {
-
+        for (int i =1; i< watchedList.size(); i++){
+            int a = watchedList.get(i-1).getEpisodes();
+            int b = watchedList.get(i).getEpisodes();
+            //if a has less episodes than b switch them
+            if(a > b){
+                WatchedItem temp1 = watchedList.get(i-1);
+                WatchedItem temp2 = watchedList.get(i);                
+                watchedList.set(i, temp1);
+                watchedList.set(i-1, temp2);
+                i--;
+            }
+        }
     }
 }
