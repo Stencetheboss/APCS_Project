@@ -16,20 +16,22 @@ public class Queue
      */
     public Queue()
     {
-        // initialise instance variables
-        
+
+    }
+    public void sortByEpisodesSL()
+    {
+        for (int i =1; i< showQueue.size(); i++){
+            double a = showQueue.get(i-1).getPriority();
+            double b = showQueue.get(i).getPriority();
+            //if a has less episodes than b switch them
+            if(a > b){
+                QueueItem temp1 = showQueue.get(i-1);
+                QueueItem temp2 = showQueue.get(i);                
+                showQueue.set(i, temp1);
+                showQueue.set(i-1, temp2);
+                i--;
+            }
+        }
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return 0;
-    }
-    
 }
