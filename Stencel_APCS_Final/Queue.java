@@ -18,6 +18,10 @@ public class Queue
         
     }
     
+    public void add(String name, boolean stillAir, int eps, String startDay, String startMonth, String startYear, Genre genre, String watchSpot, double importance){
+        
+    }
+
     public void sortByEpisodesSL()
     {
         for (int i =1; i< showQueue.size(); i++){
@@ -31,6 +35,21 @@ public class Queue
                 showQueue.set(i-1, temp2);
                 i--;
             }
+        }
+    }
+
+    public void print(){
+        String air = "completed";
+        for (int i =0; i< showQueue.size(); i++){
+            String name = showQueue.get(i).getTitle();
+            int eps = showQueue.get(i).getEpisodes();
+            String date = showQueue.get(i).getDate();
+            String genre = showQueue.get(i).getGenre();
+            if (showQueue.get(i).isAiring)
+            air = "airing";
+            else
+            air = "completed";
+            System.out.println(name + "t/" + air + "t/" + eps + "t/" + date + "t/" + genre + "t/" + );
         }
     }
 

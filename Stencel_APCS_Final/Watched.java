@@ -17,6 +17,10 @@ public class Watched
     {
         
     }
+    
+    public void add(String name, boolean stillAir, int eps, String startDay, String startMonth, String startYear, Genre genre, String watchSpot, double score){
+        
+    }
 
     /**
      * An example of a method - replace this comment with your own
@@ -144,5 +148,9 @@ public class Watched
                 i--;
             }
         }
+    }
+    
+    public void print(){
+        
     }
 }

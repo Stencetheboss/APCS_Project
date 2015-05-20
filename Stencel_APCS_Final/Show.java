@@ -1,4 +1,5 @@
-
+import java.net.URL;
+import java.net.MalformedURLException;
 /**
  * Write a description of class Show here.
  * 
@@ -12,7 +13,7 @@ public abstract class Show
     private String showName;
     private boolean airing;
     private Genre genre;
-    private String watchLoc;
+    private URL watchLoc;
     private String showStartDate;
 
     /**
@@ -24,9 +25,18 @@ public abstract class Show
         airing = stillAir;
         this.genre = genre;
         showName = name;
-        showStartDate = startYear + startMonth + startDay;
-        watchLoc = watchSpot;
+        showStartDate = startYear + "/" + startMonth + "/" + startDay;
+        try {
+            watchLoc = new URL(watchSpot);
+        } 
+        catch (MalformedURLException e) {
+            try {
+                watchLoc = new URL("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+            } 
+            catch (MalformedURLException e) {
+                //you're boned mate
+            }
+
+        }
+
     }
-
-
-}

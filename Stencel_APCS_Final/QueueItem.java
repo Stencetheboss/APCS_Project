@@ -44,4 +44,12 @@ public class QueueItem extends Show
     {
         return episodes;
     }
+    
+    public boolean isAiring(){
+        return airing;
+    }
+    
+    public String getGenre(){
+       return genre.getGenre();
+    }
 }
