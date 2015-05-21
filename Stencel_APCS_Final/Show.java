@@ -14,18 +14,18 @@ public abstract class Show
     private boolean airing;
     private Genre genre;
     private URL watchLoc;
-    private String showStartDate;
+    private int showStartYear;
 
     /**
      * Constructor for objects of class Show
      */
-    public Show(String name, boolean stillAir, int eps, String startDay, String startMonth, String startYear, Genre genre, String watchSpot)
+    public Show(String name, boolean stillAir, int eps, int startYear, Genre genre, String watchSpot)
     {
         episodes = eps;
         airing = stillAir;
         this.genre = genre;
         showName = name;
-        showStartDate = startYear + "/" + startMonth + "/" + startDay;
+        showStartYear = startYear;
         try {
             watchLoc = new URL(watchSpot);
         } 

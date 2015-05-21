@@ -12,13 +12,13 @@ public class WatchedItem extends Show
     private String showName;
     private boolean airing;
     private Genre genre;
-    private URL watchLoc;
-    private String showStartDate;  
+    private String watchLoc;
+    private int showStartYear;  
     private double rating;
 
-    public WatchedItem(String name, boolean stillAir, int eps, String startDay, String startMonth, String startYear, Genre genre, URL watchSpot, double score)
+    public WatchedItem(String name, boolean stillAir, int eps, int startYear, Genre genre, String watchSpot, double score)
     {
-        super(name, stillAir, eps, startDay, startMonth, startYear, genre, watchSpot);
+        super(name, stillAir, eps, startYear, genre, watchSpot);
         rating = score;
     }
 
@@ -32,13 +32,17 @@ public class WatchedItem extends Show
         return rating;        
     }
     
-    public String getDate()
+    public int getDate()
     {
-        return showStartDate;
+        return showStartYear;
     }
     
     public int getEpisodes()
     {
         return episodes;
+    }
+    
+    public String getGenre(){
+       return genre.getGenre();
     }
 }

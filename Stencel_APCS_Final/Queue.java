@@ -18,7 +18,7 @@ public class Queue
         
     }
     
-    public void add(String name, boolean stillAir, int eps, String startDay, String startMonth, String startYear, Genre genre, String watchSpot, double importance){
+    public void add(String name, boolean stillAir, int eps, int startYear, Genre genre, String watchSpot, double importance){
         
     }
 
@@ -43,15 +43,17 @@ public class Queue
         for (int i =0; i< showQueue.size(); i++){
             String name = showQueue.get(i).getTitle();
             int eps = showQueue.get(i).getEpisodes();
-            String date = showQueue.get(i).getDate();
+            int date = showQueue.get(i).getDate();
             String genre = showQueue.get(i).getGenre();
             double priority = showQueue.get(i).getPriority();
+            System.out.println("Your Show Queue");
             if (showQueue.get(i).isAiring())
             air = "airing";
             else
             air = "completed";
-            System.out.println(name + "t/" + air + "t/" + eps + "t/" + date + "t/" + genre + "t/" + priority);
+            System.out.println(i + "t/" + name + "t/" + air + "t/" + eps + "t/" + date + "t/" + genre + "t/" + priority);
         }
+        System.out.println("***************************************");
     }
 
 }

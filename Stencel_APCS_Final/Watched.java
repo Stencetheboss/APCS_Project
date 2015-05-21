@@ -15,19 +15,13 @@ public class Watched
      */
     public Watched()
     {
-        
-    }
-    
-    public void add(String name, boolean stillAir, int eps, String startDay, String startMonth, String startYear, Genre genre, String watchSpot, double score){
-        
+
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
+    public void add(String name, boolean stillAir, int eps, int startYear, Genre genre, String watchSpot, double score){
+
+    }
+
     public void sortAlphabticallyAZ()
     {
         for (int i =1; i< watchedList.size(); i++){
@@ -91,9 +85,9 @@ public class Watched
     public void sortByDateON()
     {
         for (int i =1; i< watchedList.size(); i++){
-            String a = watchedList.get(i-1).getDate();
-            String b = watchedList.get(i).getDate();
-            if(a.compareTo( b) < 0){
+            int a = watchedList.get(i-1).getDate();
+            int b = watchedList.get(i).getDate();
+            if(a > b){
                 WatchedItem temp1 = watchedList.get(i-1);
                 WatchedItem temp2 = watchedList.get(i);                
                 watchedList.set(i, temp1);
@@ -102,13 +96,13 @@ public class Watched
             }
         }       
     }
-    
+
     public void sortByDateNO()
     {
         for (int i =1; i< watchedList.size(); i++){
-            String a = watchedList.get(i-1).getDate();
-            String b = watchedList.get(i).getDate();
-            if(a.compareTo(b) > 0){
+            int a = watchedList.get(i-1).getDate();
+            int b = watchedList.get(i).getDate();
+            if(a < b){
                 WatchedItem temp1 = watchedList.get(i-1);
                 WatchedItem temp2 = watchedList.get(i);                
                 watchedList.set(i, temp1);
@@ -149,8 +143,20 @@ public class Watched
             }
         }
     }
-    
+
     public void print(){
-        
+        String air = "completed";
+        System.out.println("Your List of Watched Shows");
+        for (int i =0; i< watchedList.size(); i++){
+            String name = watchedList.get(i).getTitle();
+            int eps = watchedList.get(i).getEpisodes();
+            int date = watchedList.get(i).getDate();
+            String genre = watchedList.get(i).getGenre();
+            double rating = watchedList.get(i).getRating();
+
+            System.out.println(i + "t/" + name + "t/" + air + "t/" + eps + "t/" + date + "t/" + genre + "t/" + rating);
+
+        }
+        System.out.println("***************************************");
     }
 }
