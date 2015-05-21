@@ -33,10 +33,11 @@ public abstract class Show
             try {
                 watchLoc = new URL("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
             } 
-            catch (MalformedURLException e) {
+            catch (MalformedURLException z) {
                 //you're boned mate
             }
 
         }
 
     }
+}

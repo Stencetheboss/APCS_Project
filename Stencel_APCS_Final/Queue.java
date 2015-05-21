@@ -45,11 +45,12 @@ public class Queue
             int eps = showQueue.get(i).getEpisodes();
             String date = showQueue.get(i).getDate();
             String genre = showQueue.get(i).getGenre();
-            if (showQueue.get(i).isAiring)
+            double priority = showQueue.get(i).getPriority();
+            if (showQueue.get(i).isAiring())
             air = "airing";
             else
             air = "completed";
-            System.out.println(name + "t/" + air + "t/" + eps + "t/" + date + "t/" + genre + "t/" + );
+            System.out.println(name + "t/" + air + "t/" + eps + "t/" + date + "t/" + genre + "t/" + priority);
         }
     }
 
