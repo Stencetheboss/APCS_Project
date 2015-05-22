@@ -19,7 +19,8 @@ public class Watched
     }
 
     public void add(String name, boolean stillAir, int eps, int startYear, Genre genre, String watchSpot, double score){
-
+        WatchedItem item = new WatchedItem(name, stillAir, eps, startYear, genre, watchSpot, score);
+        watchedList.add(item);
     }
 
     public void sortAlphabticallyAZ()

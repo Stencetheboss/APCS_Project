@@ -15,11 +15,12 @@ public class Queue
      */
     public Queue()
     {
-        
+        showQueue = new ArrayList <QueueItem>();
     }
     
     public void add(String name, boolean stillAir, int eps, int startYear, Genre genre, String watchSpot, double importance){
-        
+        QueueItem item = new QueueItem(name, stillAir, eps, startYear, genre, watchSpot, importance);
+        showQueue.add(item);
     }
 
     public void sortByEpisodesSL()
