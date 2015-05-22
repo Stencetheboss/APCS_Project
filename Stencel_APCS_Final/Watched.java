@@ -15,10 +15,12 @@ public class Watched
      */
     public Watched()
     {
-
+        watchedList = new ArrayList <WatchedItem>();
+        WatchedItem item = new WatchedItem("placeholder", false, 0, 0000, "placeholder", "placeholder", 0);
+        watchedList.add(item);
     }
 
-    public void add(String name, boolean stillAir, int eps, int startYear, Genre genre, String watchSpot, double score){
+    public void add(String name, boolean stillAir, int eps, int startYear, String genre, String watchSpot, double score){
         WatchedItem item = new WatchedItem(name, stillAir, eps, startYear, genre, watchSpot, score);
         watchedList.add(item);
     }
@@ -155,7 +157,7 @@ public class Watched
             String genre = watchedList.get(i).getGenre();
             double rating = watchedList.get(i).getRating();
 
-            System.out.println(i + "t/" + name + "t/" + air + "t/" + eps + "t/" + date + "t/" + genre + "t/" + rating);
+            System.out.println(i + "\t" + name + "\t" + air + "\t" + eps + "\t" + date + "\t" + genre + "\t" + rating);
 
         }
         System.out.println("***************************************");

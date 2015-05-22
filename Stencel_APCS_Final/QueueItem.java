@@ -11,7 +11,7 @@ public class QueueItem extends Show
     private int episodes;
     private String showName;
     private boolean airing;
-    private Genre genre;
+    private String genre;
     private String watchLoc;
     private int showStartYear;  
     private double priority;
@@ -19,7 +19,7 @@ public class QueueItem extends Show
     /**
      * Constructor for objects of class QueueItem
      */
-    public QueueItem(String name, boolean stillAir, int eps, int startYear, Genre genre, String watchSpot, double importance)
+    public QueueItem(String name, boolean stillAir, int eps, int startYear, String genre, String watchSpot, double importance)
     {
         super(name, stillAir, eps, startYear, genre, watchSpot);
         priority = importance;
@@ -50,6 +50,6 @@ public class QueueItem extends Show
     }
     
     public String getGenre(){
-       return genre.getGenre();
+       return genre;
     }
 }

@@ -12,14 +12,14 @@ public abstract class Show
     private int episodes;
     private String showName;
     private boolean airing;
-    private Genre genre;
+    private String genre;
     private URL watchLoc;
     private int showStartYear;
 
     /**
      * Constructor for objects of class Show
      */
-    public Show(String name, boolean stillAir, int eps, int startYear, Genre genre, String watchSpot)
+    public Show(String name, boolean stillAir, int eps, int startYear, String genre, String watchSpot)
     {
         episodes = eps;
         airing = stillAir;

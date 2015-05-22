@@ -14,14 +14,14 @@ public class ShowList
     {
         boolean cont = true;        
         scan = new Scanner(System.in);
-        System.out.println("NOTE, YOU MAY WANT TO RESIZE THIS WINDOW TO SEE ALL INFORMATION");
-        System.out.println("Your current watched list and Queue are empty" + "\n" + "*************");
+        System.out.println("***************************" + "NOTE, YOU MAY WANT TO RESIZE THIS WINDOW TO SEE ALL INFORMATION"+ "\n" + "***************************");
+        System.out.println("\n" + "Your current watched list and Queue are empty" + "\n" + "***************************");
 
         int episodes;
         String showName;
         boolean airing = false;
         String tempBool;
-        Genre genre;
+        String genre;
         String watchLoc;
 
         int startYear; 
@@ -38,7 +38,7 @@ public class ShowList
                 showName = scan.next();
 
                 //airing check
-                while (!validInput){
+                do{
                     System.out.println("is the show still airing? (Y/N)");
                     tempBool = scan.next();
                     if (tempBool.equals("Y") || tempBool.equals("y") || tempBool.equals("n") || tempBool.equals("N")){
@@ -53,7 +53,7 @@ public class ShowList
                         System.out.println("Invalid, please enter Y or N");
                         tempBool = scan.next();
                     }
-                }
+                }while (!validInput);
 
                 // episodes
                 System.out.println("Number of Episodes?");
@@ -65,7 +65,7 @@ public class ShowList
 
                 //genre
                 System.out.println("What is the main genre of the show?");
-                genre = new Genre(scan.next());
+                genre = scan.next();
 
                 //watchSpot
                 System.out.println("Where do you watch the show from? (if a website, copy/paste an URL!)");
@@ -77,7 +77,7 @@ public class ShowList
 
                 //add item
                 showQueue.add(showName, airing, episodes, startYear, genre, watchLoc, priority);
-                
+
                 printQueue();
             }
             else if(choice.equals("W") || choice.equals("w")){
@@ -98,7 +98,7 @@ public class ShowList
 
                 //genre
                 System.out.println("What is the main genre of the show?");
-                genre = new Genre(scan.next());
+                genre = scan.next();
 
                 //watchSpot
                 System.out.println("Where do you watch the show from? (if a website, copy/paste an URL!)");
@@ -130,7 +130,7 @@ public class ShowList
     public static void printQueue(){
         showQueue.print();
     }
-    
+
     public static void printWatched(){
         watchList.print();
     }
