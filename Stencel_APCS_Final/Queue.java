@@ -8,34 +8,31 @@ import java.util.*;
  */
 public class Queue
 {
-    private ArrayList<QueueItem> showQueue;
+    private ArrayList<QueueItem> q= new ArrayList <QueueItem>(); 
 
     /**
      * Constructor for objects of class Queue
      */
     public Queue()
     {
-        showQueue = new ArrayList <QueueItem>();
-        QueueItem item = new QueueItem("placeholder", false, 0, 0000, "placeholder", "placeholder", 0);
-        showQueue.add(item);
+               
     }
     
-    public void add(String name, boolean stillAir, int eps, int startYear, String genre, String watchSpot, double importance){
-        QueueItem item = new QueueItem(name, stillAir, eps, startYear, genre, watchSpot, importance);
-        showQueue.add(item);
+    public void add(QueueItem item){        
+        q.add(item);
     }
 
     public void sortByEpisodesSL()
     {
-        for (int i =1; i< showQueue.size(); i++){
-            double a = showQueue.get(i-1).getPriority();
-            double b = showQueue.get(i).getPriority();
+        for (int i =1; i< q.size(); i++){
+            double a = q.get(i-1).getPriority();
+            double b = q.get(i).getPriority();
             //if a has less episodes than b switch them
             if(a > b){
-                QueueItem temp1 = showQueue.get(i-1);
-                QueueItem temp2 = showQueue.get(i);                
-                showQueue.set(i, temp1);
-                showQueue.set(i-1, temp2);
+                QueueItem temp1 = q.get(i-1);
+                QueueItem temp2 = q.get(i);                
+                q.set(i, temp1);
+                q.set(i-1, temp2);
                 i--;
             }
         }
@@ -43,18 +40,10 @@ public class Queue
 
     public void print(){
         String air = "completed";
-        for (int i =0; i< showQueue.size(); i++){
-            String name = showQueue.get(i).getTitle();
-            int eps = showQueue.get(i).getEpisodes();
-            int date = showQueue.get(i).getDate();
-            String genre = showQueue.get(i).getGenre();
-            double priority = showQueue.get(i).getPriority();
-            System.out.println("Your Show Queue");
-            if (showQueue.get(i).isAiring())
-            air = "airing";
-            else
-            air = "completed";
-            System.out.println(i + "t/" + name + "t/" + air + "t/" + eps + "t/" + date + "t/" + genre + "t/" + priority);
+        System.out.println("\n" + "Your Queue" + "\n");
+        for (int i =0; i< q.size(); i++){
+            System.out.print (i);
+            q.get(i).printShow();
         }
         System.out.println("***************************************");
     }

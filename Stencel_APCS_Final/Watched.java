@@ -149,8 +149,8 @@ public class Watched
 
     public void print(){
         String air = "completed";
-        System.out.println("Your List of Watched Shows");
-        for (int i =0; i< watchedList.size(); i++){
+        System.out.println("\n" + "Your List of Watched Shows");
+        for (int i =1; i< watchedList.size(); i++){
             String name = watchedList.get(i).getTitle();
             int eps = watchedList.get(i).getEpisodes();
             int date = watchedList.get(i).getDate();

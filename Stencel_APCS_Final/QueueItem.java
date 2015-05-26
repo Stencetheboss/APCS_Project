@@ -52,4 +52,9 @@ public class QueueItem extends Show
     public String getGenre(){
        return genre;
     }
+    
+    public void printShow(){
+        
+      System.out.println("\t" + showName + "\t" + airing + "\t" + episodes + "\t" + showStartYear + "\t" + genre + "\t" + priority);  
+    }
 }

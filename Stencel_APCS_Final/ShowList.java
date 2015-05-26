@@ -14,16 +14,14 @@ public class ShowList
     {
         boolean cont = true;        
         scan = new Scanner(System.in);
-        System.out.println("***************************" + "NOTE, YOU MAY WANT TO RESIZE THIS WINDOW TO SEE ALL INFORMATION"+ "\n" + "***************************");
-        System.out.println("\n" + "Your current watched list and Queue are empty" + "\n" + "***************************");
-
+        System.out.println("***************************" + "\n" + "NOTE, YOU MAY WANT TO RESIZE THIS WINDOW TO SEE ALL INFORMATION"+ "\n" + "***************************");
+        System.out.println("\n" + "***************************" + "\n" + "Your current watched list and Queue are empty" + "\n");
         int episodes;
         String showName;
         boolean airing = false;
         String tempBool;
         String genre;
         String watchLoc;
-
         int startYear; 
         double rating; 
         double priority;
@@ -35,7 +33,7 @@ public class ShowList
             if(choice.equals("Q") || choice.equals("q")){
                 //title
                 System.out.println("Title?");
-                showName = scan.next();
+                showName = scan.next();                
 
                 //airing check
                 do{
@@ -76,8 +74,8 @@ public class ShowList
                 priority = scan.nextDouble();
 
                 //add item
-                showQueue.add(showName, airing, episodes, startYear, genre, watchLoc, priority);
-
+                QueueItem item = new QueueItem (showName, airing, episodes, startYear, genre, watchLoc, priority);
+                showQueue.add(item);
                 printQueue();
             }
             else if(choice.equals("W") || choice.equals("w")){
