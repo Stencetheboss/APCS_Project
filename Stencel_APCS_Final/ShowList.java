@@ -107,8 +107,8 @@ public class ShowList
                 rating = scan.nextDouble();
 
                 //add item
-                watchList.add(showName, airing, episodes, startYear, genre, watchLoc, rating);
-
+                WatchedItem item = new WatchedItem(showName, airing, episodes, startYear, genre, watchLoc, rating);
+                watchList.add(item);
             }
             else if(choice.equals("P") || choice.equals("p")){
                 printLists();

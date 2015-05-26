@@ -8,12 +8,7 @@
 public class QueueItem extends Show
 {
     // instance variables - replace the example below with your own
-    private int episodes;
-    private String showName;
-    private boolean airing;
-    private String genre;
-    private String watchLoc;
-    private int showStartYear;  
+     
     private double priority;
 
     /**
@@ -53,8 +48,7 @@ public class QueueItem extends Show
        return genre;
     }
     
-    public void printShow(){
-        
+    public void printShow(){        
       System.out.println("\t" + showName + "\t" + airing + "\t" + episodes + "\t" + showStartYear + "\t" + genre + "\t" + priority);  
     }
 }

@@ -8,14 +8,13 @@ import java.util.*;
  */
 public class Queue
 {
-    private ArrayList<QueueItem> q= new ArrayList <QueueItem>(); 
-
+    private ArrayList<QueueItem> q;
     /**
      * Constructor for objects of class Queue
      */
     public Queue()
     {
-               
+        q= new ArrayList <QueueItem>();                
     }
     
     public void add(QueueItem item){        
@@ -42,7 +41,7 @@ public class Queue
         String air = "completed";
         System.out.println("\n" + "Your Queue" + "\n");
         for (int i =0; i< q.size(); i++){
-            System.out.print (i);
+            System.out.print (i+1);
             q.get(i).printShow();
         }
         System.out.println("***************************************");

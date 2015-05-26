@@ -11,4 +11,6 @@ comment4.params=
 comment4.target=int\ getEpisodes()
 comment5.params=
 comment5.target=java.lang.String\ getGenre()
-numComments=6
+comment6.params=
+comment6.target=void\ printShow()
+numComments=7

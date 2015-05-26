@@ -8,12 +8,6 @@
 public class WatchedItem extends Show
 {
     // instance variables - replace the example below with your own
-    private int episodes;
-    private String showName;
-    private boolean airing;
-    private String genre;
-    private String watchLoc;
-    private int showStartYear;  
     private double rating;
 
     public WatchedItem(String name, boolean stillAir, int eps, int startYear, String genre, String watchSpot, double score)
@@ -44,5 +38,9 @@ public class WatchedItem extends Show
     
     public String getGenre(){
        return genre;
+    }
+    
+    public void printShow(){        
+      System.out.println("\t" + showName + "\t" + airing + "\t" + episodes + "\t" + showStartYear + "\t" + genre + "\t" + rating);  
     }
 }

@@ -9,12 +9,12 @@ import java.net.MalformedURLException;
 public abstract class Show
 {
     // instance variables - replace the example below with your own
-    private int episodes;
-    private String showName;
-    private boolean airing;
-    private String genre;
-    private URL watchLoc;
-    private int showStartYear;
+    public int episodes;
+    public String showName;
+    public boolean airing;
+    public String genre;
+    public URL watchLoc;
+    public int showStartYear;
 
     /**
      * Constructor for objects of class Show
