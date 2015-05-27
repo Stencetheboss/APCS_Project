@@ -81,10 +81,25 @@ public class ShowList
             else if(choice.equals("W") || choice.equals("w")){
                 //title
                 System.out.println("Title?");
-                showName = scan.next();
+                showName = scan.next();                
 
                 //airing check
-                airing = false;
+                do{
+                    System.out.println("is the show still airing? (Y/N)");
+                    tempBool = scan.next();
+                    if (tempBool.equals("Y") || tempBool.equals("y") || tempBool.equals("n") || tempBool.equals("N")){
+                        if (tempBool.equals("Y") || tempBool.equals("y"))
+                            airing = true;
+                        else if (tempBool.equals("N") || tempBool.equals("n"))
+                            airing = false;
+                        validInput = true;
+                    }
+                    else{
+                        validInput = false;
+                        System.out.println("Invalid, please enter Y or N");
+                        tempBool = scan.next();
+                    }
+                }while (!validInput);
 
                 // episodes
                 System.out.println("Number of Episodes?");
@@ -109,6 +124,7 @@ public class ShowList
                 //add item
                 WatchedItem item = new WatchedItem(showName, airing, episodes, startYear, genre, watchLoc, rating);
                 watchList.add(item);
+                printWatched();
             }
             else if(choice.equals("P") || choice.equals("p")){
                 printLists();

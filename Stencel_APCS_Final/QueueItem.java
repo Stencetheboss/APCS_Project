@@ -49,6 +49,11 @@ public class QueueItem extends Show
     }
     
     public void printShow(){        
-      System.out.println("\t" + showName + "\t" + airing + "\t" + episodes + "\t" + showStartYear + "\t" + genre + "\t" + priority);  
+        String air;
+        if (airing)
+            air = "airing";
+        else 
+            air = "finished";
+      System.out.println("\t" + showName + "\t" + air + "\t" + episodes + "\t" + showStartYear + "\t" + genre + "\t" + priority);  
     }
 }

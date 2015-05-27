@@ -146,7 +146,8 @@ public class Watched
 
     public void print(){
         String air = "completed";
-        System.out.println("\n" + "Your List of Watched Shows");
+        System.out.println("\n" + "Your List of Watched Shows" + "\n");
+        System.out.println("place" + "\t" + "name" + "\t" + "still airing" + "\t" + "number of episodes" + "\t" + "year" + "\t" + "genre" + "\t" + "rating");;
         for (int i =0; i< w.size(); i++){
             System.out.print (i+1);
             w.get(i).printShow();

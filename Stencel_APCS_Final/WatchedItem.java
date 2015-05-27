@@ -20,27 +20,32 @@ public class WatchedItem extends Show
     {
         return showName;
     }
-    
+
     public double getRating()
     {
         return rating;        
     }
-    
+
     public int getDate()
     {
         return showStartYear;
     }
-    
+
     public int getEpisodes()
     {
         return episodes;
     }
-    
+
     public String getGenre(){
-       return genre;
+        return genre;
     }
-    
-    public void printShow(){        
-      System.out.println("\t" + showName + "\t" + airing + "\t" + episodes + "\t" + showStartYear + "\t" + genre + "\t" + rating);  
+
+    public void printShow(){ 
+        String air;
+        if (airing)
+            air = "airing";
+        else 
+            air = "finished";
+        System.out.println("\t" + showName + "\t" + air + "\t" + episodes + "\t" + showStartYear + "\t" + genre + "\t" + rating);  
     }
 }

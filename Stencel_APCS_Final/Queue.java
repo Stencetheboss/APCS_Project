@@ -40,6 +40,7 @@ public class Queue
     public void print(){
         String air = "completed";
         System.out.println("\n" + "Your Queue" + "\n");
+        System.out.println("place" + "\t" + "name" + "\t" + "still airing" + "\t" + "number of episodes" + "\t" + "year" + "\t" + "genre" + "\t" + "priority");
         for (int i =0; i< q.size(); i++){
             System.out.print (i+1);
             q.get(i).printShow();
